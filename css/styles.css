@@ -175,8 +175,8 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  min-height: 100px;
+  min-width: 60%;
 }
 #restaurants-list li h1 {
   color: #8A4500;
@@ -351,7 +351,7 @@ nav h1 a {
 	}
 
 	#restaurants-list li {
-		width: 30%;
+		width: 50%;
 	}
 	.inside #map-container {
 		height: 100%;
