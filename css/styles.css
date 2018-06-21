@@ -41,7 +41,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #DEDEDE;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -64,6 +64,18 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+}
+.skip-link {
+	position: absolute;
+	top: -40px;
+	color: #fff;
+	font-size: 14pt;
+	font-weight: 200;
+	letter-spacing: 5px;
+}
+.skip-link:focus{
+	top: 40px;
+	left: 43%;
 }
 #breadcrumb {
     padding: 7px 40px 16px;
@@ -88,13 +100,13 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #1D478B;
     text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
+    color: #1D478B;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
@@ -103,11 +115,18 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+.leaflet-control-attribution, .leaflet-control a:link{
+	color: #1D478B;
+}
+
+.leaflet-bottom, .leaflet-right{
+	background-color: white;
+}
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
   height: 100%;
-  background-color: #3397DB;
+  background-color: #135B90;
   align-items: center;
 }
 .filter-options h2 {
@@ -160,7 +179,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #8A4500;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -176,7 +195,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: #2B2B2B;
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;
@@ -203,7 +222,7 @@ nav h1 a {
 }
 .inside #map {
   background-color: #ccc;
-  height: 100%;
+  height: 93%;
   width: 100%;
 }
 .inside #footer {
@@ -255,7 +274,7 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #5C2B00;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -359,7 +378,7 @@ nav h1 a {
 
 @media screen and (min-width: 1000px) {
 	.filter-options select {
-		width: 15%;
+		width: 18%;
 	}
 
 	#restaurants-list li {
