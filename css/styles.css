@@ -67,15 +67,17 @@ nav h1 a {
 }
 .skip-link {
 	position: absolute;
-	top: -40px;
+	top: -80px;
 	color: #fff;
-	font-size: 14pt;
+	font-size: 12pt;
 	font-weight: 200;
 	letter-spacing: 5px;
+	text-transform: capitalize;
 }
 .skip-link:focus{
-	top: 40px;
-	left: 43%;
+	position: relative;
+	color: #fff;
+	top: 0%;
 }
 #breadcrumb {
     padding: 7px 40px 16px;
