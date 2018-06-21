@@ -157,6 +157,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
+  li.setAttribute("aria-labelledby", restaurant.name);
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
