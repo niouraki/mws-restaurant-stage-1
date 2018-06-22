@@ -224,7 +224,7 @@ nav h1 a {
 }
 .inside #map {
   background-color: #ccc;
-  height: 93%;
+  height: 100%;
   width: 100%;
 }
 .inside #footer {
@@ -244,11 +244,13 @@ nav h1 a {
   line-height: 1.1;
 	position: absolute;
 	top: -1000px;
+	display: none;
 }
 #restaurant-img {
 	width: 50%;
 	position: absolute;
 	top: -1000px;
+	display: none;
 }
 #restaurant-address {
   font-size: 12pt;
