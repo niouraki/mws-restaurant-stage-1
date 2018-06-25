@@ -304,6 +304,9 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+#restaurant-hours th {
+	text-align: left;
+}
 
 /* ====================== Media Queries ====================== */
 @media screen and (min-width: 370px) {
@@ -362,6 +365,9 @@ nav h1 a {
 		top: 80px;
 		width: 50%;
 	}
+	.inside #map {
+		height: 92.5%;
+	}
 	#restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
@@ -380,6 +386,11 @@ nav h1 a {
 }
 }
 
+@media screen and (min-width: 800px) and (max-width: 999px) {
+	.inside #map {
+		height: 94%;
+	}
+}
 @media screen and (min-width: 1000px) {
 	.filter-options select {
 		width: 18%;
@@ -392,6 +403,9 @@ nav h1 a {
 		height: 100%;
 		top: 80px;
 		width: 50%;
+	}
+	.inside #map {
+		height: 92.5%;
 	}
 	#restaurant-address {
   font-size: 12pt;
