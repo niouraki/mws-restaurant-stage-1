@@ -107,6 +107,16 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
+  const dayTitle = document.createElement('th');
+  dayTitle.setAttribute('scope', 'col');
+  dayTitle.innerHTML = '<strong>Days</strong>';
+  hours.appendChild(dayTitle);
+
+  const hoursTitle = document.createElement('th');
+  hoursTitle.setAttribute('scope', 'col');
+  hoursTitle.innerHTML = "<strong>Hours</strong>";
+  hours.appendChild(hoursTitle);
+
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
@@ -120,7 +130,15 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
     hours.appendChild(row);
   }
+  myCaption();
 }
+
+//Create a caption for the table
+function myCaption() {
+  let myTable = document.getElementById('restaurant-hours');
+  let myCap = myTable.createCaption();
+  myCap.innerHTML = '<strong>Operating hours</strong>';
+};
 
 /**
  * Create all reviews HTML and add them to the webpage.
