@@ -35,7 +35,7 @@ self.addEventListener('activate', function(event) {
       return Promise.all(
         cacheNames.filter(function(cacheName) {
           return cacheName.startsWith('restaurant-') &&
-                 cacheName != staticCacheName;
+            cacheName != staticCacheName;
         }).map(function(cacheName) {
           return caches.delete(cacheName);
         })
