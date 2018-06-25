@@ -135,12 +135,11 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 }
 
 //Create a caption for the table
-function myCaption() {
+myCaption = () => {
   let myTable = document.getElementById('restaurant-hours');
   let myCap = myTable.createCaption();
   myCap.innerHTML = '<strong>Operating hours</strong>';
 };
-
 /**
  * Create all reviews HTML and add them to the webpage.
  */
