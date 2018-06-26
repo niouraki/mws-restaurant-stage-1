@@ -20,7 +20,7 @@
       <a href="#restaurant-container" class="skip-link">Skip to main content</a>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" role="navigation" aria-label="Breadcrumb">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -32,13 +32,13 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" aria-label="restaurant map"></div>
+      <div id="map" role="application" aria-label="restaurant map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h2 tabindex="-1" id="restaurant-name"></h2>
-      <img tabindex="-1"id="restaurant-img">
+      <h2 id="restaurant-name"></h2>
+      <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
       <table id="restaurant-hours"></table>
